@@ -35,7 +35,7 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
-
+<style>
    * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -127,7 +127,8 @@
   to {opacity: 1}
 }ar slideIndex = 1;
 showSlides(slideIndex);
-
+    </style>
+    <script>
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -170,7 +171,7 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 } 
-    
+    </script
     
     </div>
     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/13600148_10204732977842812_5070534420370781996_n.jpg?oh=502cb7aa579d435f723fbf5434b771c6&oe=5A02EC18" style=height:375px;width:370px;/>
