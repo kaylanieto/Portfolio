@@ -5,23 +5,25 @@
 <head>
     <title> Kayla Nieto </title>
 
-var x;
-
-function changecolors() {
-    x = 1;
-    setInterval(change, 1000);
+    @-webkit-keyframes blink {
+        0%   { background:red; }
+        50%  { background:green;}
+        100% { background:red; }
 }
-
-function change() {
-    if (x === 1) {
-        color = "red";
-        x = 2;
-    } else {
-        color = "green";
-        x = 1;
-    }
-
-    document.body.style.background = color;
+@-moz-keyframes blink {
+        0%   { background:red; }
+        50%  { background:green;}
+        100% { background:red; }
+}
+@-ms-keyframes blink {
+        0%   { background:red; }
+        50%  { background:green;}
+        100% { background:red; }
+}
+body{
+     -webkit-animation: blink 1s infinite;
+     -moz-animation:    blink 1s infinite;
+     -ms-animation:     blink 1s infinite;
 }
     <h1 style="color:MidnightBlue;text-align:center;height:50px;font-size:400%">Kayla Nieto </h1>
 
