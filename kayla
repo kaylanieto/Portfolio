@@ -18,3 +18,5 @@ body{
      -moz-animation:    blink 1s infinite;
      -ms-animation:     blink 1s infinite;
 }
+<body>
+</body>
