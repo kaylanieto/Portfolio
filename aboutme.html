@@ -236,6 +236,39 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2500); // Change image every 2 seconds
     
+@-webkit-keyframes colors {
+          0% {
+              background-color: #F9485A;
+          }
+          40%{
+              background-color:  #2D122A;;
+          }
+          70% {
+              background-color: #45DEDA;
+          }
+          100% {
+              background-color: #F9485A;
+          }
+}
+
+#footer {
+    padding: 75px;
+    text-align: center;
+    margin: 0;
+    transition: 200ms ease-in;
+    background: #45deda;
+    color: white;
+
+    animation-name: colors;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;   
+    
+    
+    
+    
+    
+    
+    
 }
 </script>
 
