@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <script type="text/javascript">
+         function changecolors() {
+             x = 1; // <-- I know this is wrong, I just don't know where to place it 
+             var t = setTimeout("change()", 1000);
+         }
+         function change() {
+             while(x < 3) {
+                 if(x = 1) {
+                     color = "red";
+                     x++;
+                 } else if (x = 2) {
+                     color = "green";
+                     x = 1;
+                 }
+                 document.body.style.background = color;
+             }
+         }
+     </head>
+     <body onload="changecolors()">
+     </body>
+ </html>
