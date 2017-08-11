@@ -4,39 +4,28 @@
 
 <head>
     <title> Kayla Nieto </title>
-</head>
 
-    
-body {
-  height: 100%;
+var x;
+
+function changecolors() {
+    x = 1;
+    setInterval(change, 1000);
 }
 
-body
-  -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
-  animation: background 5s cubic-bezier(1,0,0,1) infinite;  
+function change() {
+    if (x === 1) {
+        color = "red";
+        x = 2;
+    } else {
+        color = "green";
+        x = 1;
+    }
+
+    document.body.style.background = color;
 }
-
-
-@-webkit-keyframes background {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }  
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
-}
-
-@keyframes background {
-  0% { background-color: #f99; }
-  33% { background-color: #9f9; }  
-  67% { background-color: #99f; }
-  100% { background-color: #f99; }
-}
-    
-    
-
     <h1 style="color:MidnightBlue;text-align:center;height:50px;font-size:400%">Kayla Nieto </h1>
-<!DOCTYPE html>
-<html>
-<head>
+
+
 <style>
 button.accordion {
     background-color: (144,1,1);
