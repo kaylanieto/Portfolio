@@ -4,30 +4,13 @@
 
 <head>
     <title> Kayla Nieto </title>
+</head>
+<body style=background-color:lightgray>
 
-    @-webkit-keyframes blink {
-        0%   { background:red; }
-        50%  { background:green;}
-        100% { background:red; }
-}
-@-moz-keyframes blink {
-        0%   { background:red; }
-        50%  { background:green;}
-        100% { background:red; }
-}
-@-ms-keyframes blink {
-        0%   { background:red; }
-        50%  { background:green;}
-        100% { background:red; }
-}
-body{
-     -webkit-animation: blink 1s infinite;
-     -moz-animation:    blink 1s infinite;
-     -ms-animation:     blink 1s infinite;
-}
     <h1 style="color:MidnightBlue;text-align:center;height:50px;font-size:400%">Kayla Nieto </h1>
-
-
+<!DOCTYPE html>
+<html>
+<head>
 <style>
 button.accordion {
     background-color: (144,1,1);
@@ -41,11 +24,9 @@ button.accordion {
     font-size: 15px;
     transition: 0.4s;
 }
-
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
-
 div.panel {
     padding: 0 18px;
     background-color:(150,1,1);
@@ -79,7 +60,6 @@ div.panel {
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
     this.classList.toggle("active");
@@ -105,14 +85,12 @@ for (i = 0; i < acc.length; i++) {
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
 .mySlides {display:none}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -127,18 +105,15 @@ body {font-family: Verdana,sans-serif;margin:0}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -149,7 +124,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   width: 100%;
   text-align: center;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -158,7 +132,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
@@ -170,11 +143,9 @@ body {font-family: Verdana,sans-serif;margin:0}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -182,17 +153,14 @@ body {font-family: Verdana,sans-serif;margin:0}
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -236,7 +204,6 @@ body {font-family: Verdana,sans-serif;margin:0}
 <script>
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -252,7 +219,6 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2500); // Change image every 2 seconds
-
+    
 }
 </script>
-
